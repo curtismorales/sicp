@@ -132,7 +132,7 @@ behavior will he observe with an interpreter that uses normal-order evaluation? 
 normal or applicative order: The predicate expression is evaluated first, and the result determines 
 whether to evaluate the consequent or the alternative expression.)
 ---
-applicative-order:
+normal-order:
 test is defined as
 (if (= x 0)
     0
@@ -148,7 +148,7 @@ so it becomes:
 
 which returns 0
 
-normal-order:
+applicative-order:
 evaluate the arguments:
 (p) becomes (p) in an infinite loop
 
